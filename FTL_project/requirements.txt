@@ -1,0 +1,4 @@
+Django==1.11.29
+django-extensions==2.2.9
+djangorestframework==3.9.4
+pytz==2020.1
