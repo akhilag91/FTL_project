@@ -22,6 +22,11 @@ sudo pip install virtualenv
 virtualenv[env_name]
 source[env_name]/bin/activate
 
-#clone repo and add a remote
+#clone repo
 
 Run python manage.py migrate to install migrations
+
+#generating dummy data
+
+Run python manage.py user_data_command
+
