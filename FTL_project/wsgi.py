@@ -11,9 +11,8 @@ import os
 import traceback
 
 from django.core.wsgi import get_wsgi_application
-from whitenoise.django import DjangoWhiteNoise
+from django.contrib.staticfiles.handlers import StaticFilesHandler
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "FTL_project.settings")
 
-application = get_wsgi_application()
-application = DjangoWhiteNoise(application)
+application = StaticFilesHandler(get_wsgi_application())
